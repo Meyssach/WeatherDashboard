@@ -1,0 +1,7 @@
+<ul>
+	<li *ngFor="let weatherCityToSearch of allCitiesWeatherData">
+		<h1 style="text-align: right">{{weatherCityToSearch?.cityName}}</h1>
+		<h3 style="color:#3441FE; text-align: right ">{{weatherCityToSearch?.temp}}&deg;</h3>
+		<img src="http://openweathermap.org/img/w/{{weatherCityToSearch?.icon}}.png">
+	</li>
+</ul>
